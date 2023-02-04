@@ -19,4 +19,4 @@
 </template>
 <script setup>
   const {data: products} = await useFetch("http://localhost:9000/store/products/")
- </script>
+</script>
