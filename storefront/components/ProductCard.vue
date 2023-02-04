@@ -8,19 +8,11 @@
             300
         </span>
         </div>
-
-        <div class="my-3 px-5 text-justify flex flex-col justify-center items-evenly">
-            <p class="my-1">{{ product.description }}</p>
-            <p>
-                <span class="font-semibold text-lg my-1">Material:</span> 
-                {{ product.material }}
-            </p>
-            <div class="inline-flex justify-end w-full mt-4">
-                <span 
-            class="bg-orange-500 p-2 rounded-xl w-3/6 inline-flex items-center justify-center text-gray-100">Add to cart</span>
-            </div>          
-
-
+        <div class="inline-flex justify-start w-full my-4 px-5 font-semibold">
+            <NuxtLink to="#" 
+            class="border-2 border-orange-500 px-2 py-3 rounded-full w-3/6 inline-flex items-center justify-center text-gray-700 hover:bg-orange-500 hover:text-gray-100 transition-all">
+            Add to cart
+            </NuxtLink>
         </div>
     </div>
 </template>

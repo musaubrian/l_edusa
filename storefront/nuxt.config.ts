@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/algolia'
+        '@nuxtjs/algolia',
+        '@pinia/nuxt'
     ]
 })
