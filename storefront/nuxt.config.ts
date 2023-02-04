@@ -4,5 +4,15 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxtjs/algolia',
         '@pinia/nuxt'
-    ]
+    ],
+    app: {
+        head: {
+            title: 'SomeStore',
+            meta: [
+                { charset: 'utf-8' },
+                {name: 'description', content: "Let's get something for your"},
+                { name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+            ]
+        }
+    }
 })
