@@ -92,7 +92,7 @@ const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET || "";
 
 module.exports = {
     projectConfig: {
-        //redis_url: REDIS_URL,
+        redis_url: REDIS_URL,
         //For more production-like environment install PostgresQL
         // database_url: DATABASE_URL,
         // database_type: "postgres",

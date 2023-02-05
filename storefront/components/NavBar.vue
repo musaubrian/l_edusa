@@ -30,19 +30,27 @@
                     </svg>
                     <NuxtLink to="/auth">Account</NuxtLink>
                 </li>
+               <div class="inline-flex items-center justify-center py-1">
+                <li class="md:hidden mr-6" @click="openSearch = !openSearch">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="w-7 h-7 opacity-80">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </li>
                 <li @click="isActive = !isActive" class="md:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                     </svg>
                 </li>
+               </div>
             </ul>
         </div>
     </nav>
     <DropDown v-if="isActive"/>
+    <MobileSearch v-if="openSearch"/>
+    <div>{{ searchResult }}</div>
 </template>
 
 <script setup>
-import DropDown from './DropDown.vue';
-
-const isActive = ref(false)
+        const isActive = ref(false)
+        const openSearch = ref(false)
 </script>
