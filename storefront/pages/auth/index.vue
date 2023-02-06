@@ -9,4 +9,7 @@
 import { useAuthStore } from '~~/store/authStore';
 
 const authStore = useAuthStore();
+definePageMeta({
+   layout: 'auth'
+})
 </script>

@@ -1,6 +1,5 @@
 <template>
-  <NavBar/>
-  <main class="px-4">
+  <div class="px-4">
     <div class="p-3 w-full inline-flex items-center justify-center my-2">
       <Hero/>
     </div>
@@ -15,8 +14,11 @@
       <ProductCard :product="product"/>
     </div>
   </div>
-  </main>
+</div>
 </template>
 <script setup>
+definePageMeta({
+  layout: 'default'
+})
   const {data: products} = await useFetch("http://localhost:9000/store/products/")
 </script>
