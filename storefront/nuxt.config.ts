@@ -14,5 +14,10 @@ export default defineNuxtConfig({
                 { name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
             ]
         }
+    },
+    runtimeConfig: {
+        public: {
+            STORE_BACKEND: process.env.MEDUSA_BACKEND_URL
+        }
     }
 })
