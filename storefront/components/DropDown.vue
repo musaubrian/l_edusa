@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-slate-100 inline-flex items-center justify-center">
+    <div class="w-full bg-slate-100 inline-flex md:hidden items-center justify-center">
         <ul class="flex flex-row w-5/6 my-2 justify-between">
             <li class="my-2 px-4 text-lg inline-flex justify-center items-center hover:text-orange-500">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">

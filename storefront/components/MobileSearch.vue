@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="search()"
-    class="w-full bg-slate-100 p-3 flex flex-col items-center justify-center">
+    class="w-full bg-slate-100 p-3 flex md:hidden flex-col items-center justify-center">
         <input type="search" name="" id="" placeholder="Search for products" required
         class="w-5/6 px-4 py-3 rounded-xl bg-gray-50 border-2 border-slate-400 text-gray-800 text-lg">
         <button type="submit"
